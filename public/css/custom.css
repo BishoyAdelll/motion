@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+
+:root {
+    --dark-blue: #001f3f;
+    --success: green;
+    --error: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "PT Serif", serif;
+}
+
+body {
+    direction: rtl;
+    background: var(--dark-blue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+    ),
+    url("../assets/images/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container header {
+    margin-bottom: 20px;
+}
+
+.container header p {
+    font-style: italic;
+    color: #e5e5e5;
+}
+
+.questions {
+    padding: 1em 4em 3em 3em;
+    background-color: var(--dark-blue);
+}
+
+.form-group {
+    padding: 10px 0;
+}
+
+label {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    margin: 10px 0;
+    text-align: left;
+}
+
+label + select {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(0, 32, 63, 1);
+    color: #fff;
+}
+
+label + select option {
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: #333;
+    border: none;
+}
+input[type="checkbox"]{
+    margin-left: 10px;
+}
+/* .invalid {
+  border: none;
+  box-shadow: 0 0 3px 6px rgba(255, 0, 0, 0.9);
+} */
+
+#ageYears,
+#ageMonths {
+    border-radius: 5px;
+    display: inline-block;
+    width: 15%;
+    color: #333;
+    padding: 10px;
+    border: none;
+}
+
+.input-radio {
+    display: inline-block;
+    min-width: 25px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.improvements label > input[type="checkbox"] {
+    margin-right: 10px;
+    min-height: 35px;
+    min-width: 20px;
+}
+
+#comments {
+    color: #333;
+    border-radius: 5px;
+    padding: 3px;
+    resize: none;
+    width: 100%;
+}
+
+#comments:focus {
+    outline: none;
+}
+
+.btn {
+    display: block;
+    border-radius: 3px;
+    border: none;
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    background-color: #0074d9;
+}
+
+.btn:hover {
+    transform: scale(1, 1.1);
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+/* Error validation */
+.error {
+    display: none;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.error-years {
+    display: none;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.error-months {
+    display: none;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.h_check{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
